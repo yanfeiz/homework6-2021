@@ -159,7 +159,6 @@ HAVE THE SELECTOR */
   }
   /*Requirement 15*/
   .nav_links{
-    padding-right: 750px; /*!!!!!*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
