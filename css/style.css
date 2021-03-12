@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /*Begin your code here*/
 /*Requirement 1*/
 body{
@@ -13,19 +20,35 @@ header{
   background: #fff;
   border-bottom: 3px solid #50C7C7;
   /*Your  code here again.*/
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   /* flex-wrap: wrap; */
 }
 
 /*Requirement 3*/
 .nav_links{
   /*Your code here again.*/
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 
@@ -36,10 +59,17 @@ header{
     /*You must use flex.
     /*Don't forget to vertically and horizontally 
     align the element*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 /*Requirement 5*/
@@ -50,7 +80,8 @@ header{
   padding: 0 0 50px 0;
   /*Your code here.*/
   /*Take a look at flex-basis*/
-  flex-basis: 400px;
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
 }
 
 /*Requirement 6*/
@@ -68,10 +99,17 @@ HAVE THE SELECTOR */
 .gallery{
   min-height: 600px;
   /*Your code here again.*/
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items:baseline;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align:baseline;
+      -ms-flex-align:baseline;
+          align-items:baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*Requirement 8*/
@@ -86,8 +124,10 @@ HAVE THE SELECTOR */
 /*Requirement 9*/
 #logo{
    /*Your code here.*/
-  animation-name: logo_grow;
-  animation-duration: 5s;
+  -webkit-animation-name: logo_grow;
+          animation-name: logo_grow;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
 }
 
 /*Keyframes for animation*/
@@ -120,23 +160,36 @@ HAVE THE SELECTOR */
   /*Requirement 10*/
   header{
     /*Your code here again.*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 
   /*Requirement 10*/
   .nav_links{
     /*Your code here again.*/
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-left: auto;
   }
 
   /*Requirement 11*/
   .package {
     /*Your code here again.*/
-    flex-basis: 230px;
+    -ms-flex-preferred-size: 230px;
+        flex-basis: 230px;
   } 
 }
 
@@ -144,8 +197,13 @@ HAVE THE SELECTOR */
 /*Add media query to handle reduced-motion*/
 /*Your code here again.*/ 
 @media all and (prefers-reduced-motion:reduce){
+  @-webkit-keyframes logo_grow{
+    -webkit-animation: none;
+            animation: none;
+  }
   @keyframes logo_grow{
-    animation: none;
+    -webkit-animation: none;
+            animation: none;
   }
 }
 
@@ -163,19 +221,30 @@ HAVE THE SELECTOR */
   /*Requirement 15*/
   .nav_links{
     /* padding-right: 750px; !!!!! */
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items:center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
   }
   /*Requirement 16*/
   .price{
-    align-items: flex-end;;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;;
   }
   /*Requirement 17*/
   .package{
     border: 2px solid #45ADAD;
-    flex-basis: 200px;
+    -ms-flex-preferred-size: 200px;
+        flex-basis: 200px;
   }
   /*Requirement 18*/
   #gallery, .gallery{
