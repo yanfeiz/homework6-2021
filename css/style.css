@@ -126,8 +126,8 @@ HAVE THE SELECTOR */
    /*Your code here.*/
   -webkit-animation-name: logo_grow;
           animation-name: logo_grow;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
 }
 
 /*Keyframes for animation*/
