@@ -68,7 +68,10 @@ HAVE THE SELECTOR */
 .gallery{
   min-height: 600px;
   /*Your code here again.*/
+  display: flex;
   flex-wrap: wrap;
+  align-items:baseline;
+  justify-content: center;
 }
 
 /*Requirement 8*/
@@ -159,6 +162,7 @@ HAVE THE SELECTOR */
   }
   /*Requirement 15*/
   .nav_links{
+    /* padding-right: 750px; !!!!! */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -179,4 +183,3 @@ HAVE THE SELECTOR */
   }
  
 }
-
